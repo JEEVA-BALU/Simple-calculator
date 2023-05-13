@@ -1,0 +1,96 @@
+body{
+        background-color: red;
+       /* 
+       background-image: conic-gradient(red, yellow, green, blue, black);
+       background-image: radial-gradient(circle,indigo, yellow, orange, green,red, blue,black); 
+       background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+       background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );*/
+       background-image: linear-gradient(to right, #00b4db, #0083b0);
+}
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+    clear: both;
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 40px;
+    font-weight: bold;
+    border: 3px solid rgb(126, 122, 122);
+    border-radius: 5px 5px 5px 5px;
+    outline: 8px solid black;
+    background-color: rgb(103, 248, 6);
+    clear: both;
+}
+#display.button:hover{
+    background-color: rgb(88, 214, 3);
+    color: #000;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    background-color: white;
+    border: 3px solid rgb(102, 102, 102);
+    border-radius: 0px 0px 5px 5px;
+    box-sizing: border-box;
+    outline: 6px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    clear: both;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+    border-radius: 5px;
+    
+}
+
+.button {
+    border: 1px solid #999;
+    background-color: aliceblue;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#plus {
+    background-color: rgb(255, 110, 85);
+    color: white;
+}
+#plus.button:hover{
+    background-color: rgb(252, 16, 16) ;
+}
+#arr {
+    background-color: rgb(252, 255, 85);
+    color: black;
+}
+#arr.button:hover{
+    background-color: rgb(252, 236, 16) ;
+    color: black;
+}
+#op.button:hover{
+    background-color: lightblue;
+    color: black;
+}
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+    font-weight: bold;
+}
+#equal.button:hover{
+    background-color: rgb(16, 16, 252) ;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
