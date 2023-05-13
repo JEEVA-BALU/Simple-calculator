@@ -12,8 +12,8 @@ buttons.map( button => {
                 try{
                     display.innerText = eval(display.innerText);
                 } 
-                catch {
-                    display.innerText = "Error";
+                 catch (error) {
+                    display.innerText = "error"
                 }
                 break;
             case '←':
